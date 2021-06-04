@@ -19,11 +19,12 @@ nav {
     background-color: white;
     margin: auto; /*a DIV középre igazítása --> ha a margó automatikus, akkor jobb és bal oldalon is egyenlő, nav-nak legyen egyenlő távolságú margója*/
     text-align: center; /*a nav-on belül lévő tartalom, vagyis a felsorolás középre kerül */
+    border-radius: 30px;
 }
 
 nav ul {
     margin: 0; /*a felső elcsúszás megszüntetése*/
-    padding: 15px 0 0 0;
+    padding: 18px 0 0 0;
 }
 
 nav li {
@@ -41,7 +42,6 @@ nav a:link, nav a:visited {
 nav a:hover {
     color: white;
     background-color: darkslategray;
-
 }
 
 
