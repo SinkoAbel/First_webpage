@@ -54,7 +54,9 @@ main {
     width: 600px;
 }
 
-
+.bemutatkozas_box p {
+    padding: 20px;
+}
 
 
 
