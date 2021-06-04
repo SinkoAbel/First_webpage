@@ -37,7 +37,11 @@ nav a:link, nav a:visited {
 
 }
 
+nav a:hover {
+    color: white;
+    background-color: darkslategray;
 
+}
 
 
 
