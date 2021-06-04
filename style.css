@@ -1,11 +1,24 @@
+body {
+    background-color: lightgray;
+    margin: 0;  /*a fejléc feletti 5px-es távolságot szüntetjük meg*/
+}
+
+
 
 header {
     width: 100%;
     height: 300px;
     background-image: url("kepek/fejlec.jpg");
+    background-position: center;
+
 }
 
-
+nav {
+    width: 1000px;
+    height: 60px;
+    background-color: white;
+    margin: auto; /*a DIV középre igazítása --> ha a margó automatikus, akkor jobb és bal oldalon is egyenlő, nav-nak legyen egyenlő távolságú margója*/
+}
 
 
 
