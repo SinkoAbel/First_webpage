@@ -21,7 +21,7 @@ nav {
 }
 
 nav ul {
-
+    margin: 0; /*a felső elcsúszás megszüntetése*/
 }
 
 nav li {
