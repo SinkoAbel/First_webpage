@@ -78,5 +78,6 @@ main {
 .kiemelt_box p {
     font-size: 19px;
     font-weight: bold;
+    padding: 0 0 15px 0;
 }
 
