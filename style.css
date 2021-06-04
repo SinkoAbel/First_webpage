@@ -20,9 +20,13 @@ nav {
     margin: auto; /*a DIV középre igazítása --> ha a margó automatikus, akkor jobb és bal oldalon is egyenlő, nav-nak legyen egyenlő távolságú margója*/
 }
 
+nav ul {
 
+}
 
-
+nav li {
+    display: inline;    /*felsorolások egymás mellé rendezése egy sorba*/
+}
 
 
 
