@@ -87,6 +87,11 @@ main {
     padding: 0 0 15px 0;
 }
 
+.float_vege {
+    width: 1000px;
+    clear: both;    /*A clear: both megszünteti a lebegést, innentől kezdve minden tartalom a lebegő divek alatt indul*/
+}
+
 .terkep {
     width: 1000px;
     margin: 40px auto 40px auto;
