@@ -22,13 +22,20 @@ nav {
 
 nav ul {
     margin: 0; /*a felső elcsúszás megszüntetése*/
+    padding: 15px 0 0 0;
 }
 
 nav li {
     display: inline;    /*felsorolások egymás mellé rendezése egy sorba*/
 }
 
+nav a:link, nav a:visited {
+    font-size: 21px;
+    text-decoration: none;  /*aláhúzás: nincs*/
+    color: black;
+    padding: 10px 30px 10px 30px;      /*szöveg körüli helykihagyás...mint a word-ben a sorköz*/
 
+}
 
 
 
