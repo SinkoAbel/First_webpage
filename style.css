@@ -67,6 +67,12 @@ main {
     text-align: center;
 }
 
+.jobboldal h2 {
+    margin: 0 0 20px 0;
+
+}
+
+
 
 .kiemelt_box {
     width: 300px;
