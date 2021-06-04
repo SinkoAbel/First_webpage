@@ -54,6 +54,7 @@ main {
     width: 600px;
     -webkit-box-shadow: 0px 0px 10px 0px #000000;
     box-shadow: 0px 0px 10px 0px #000000;
+    float: left;    /* lebegő, bal oldalon legyen a div, és maga mellé engedjen még más tartalmat is jobb oldalra*/
 }
 
 .bemutatkozas_box p {
