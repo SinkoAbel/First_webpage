@@ -18,6 +18,7 @@ nav {
     height: 60px;
     background-color: white;
     margin: auto; /*a DIV középre igazítása --> ha a margó automatikus, akkor jobb és bal oldalon is egyenlő, nav-nak legyen egyenlő távolságú margója*/
+    text-align: center; /*a nav-on belül lévő tartalom, vagyis a felsorolás középre kerül */
 }
 
 nav ul {
