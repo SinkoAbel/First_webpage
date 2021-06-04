@@ -1,6 +1,10 @@
 body {
     background-color: lightgray;
     margin: 0;  /*a fejléc feletti 5px-es távolságot szüntetjük meg*/
+
+    font-family: 'Noto Sans', sans-serif;
+
+
 }
 
 
