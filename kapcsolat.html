@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--A lightbox képnézegetőhöz 3 darab include kell: -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    <!-- ez az első!!! a JQuery az első mindig, és utána jön a többi! -->
+        <link href="lightbox/dist/css/lightbox.css" rel="stylesheet" />
+        <script src="lightbox/dist/js/lightbox.js"></script>
+
+    <!-- Smooth scroll kódja = a horgonyhoz a görgetés animált legyen -->
+    <script>
+        $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $('a[href*="#"]')
+                // Remove links that don't actually link to anything
+                .not('[href="#"]')
+                .not('[href="#0"]')
+                .click(function(event) {
+                    // On-page links
+                    if (
+                        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                        &&
+                        location.hostname == this.hostname
+                    ) {
+                        // Figure out element to scroll to
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        // Does a scroll target exist?
+                        if (target.length) {
+                            // Only prevent default if animation is actually gonna happen
+                            event.preventDefault();
+                            $('html, body').animate({
+                                scrollTop: target.offset().top
+                            }, 2000, function() {
+                                // Callback after animation
+                                // Must change focus!
+                                var $target = $(target);
+                                $target.focus();
+                                if ($target.is(":focus")) { // Checking if the target was focused
+                                    return false;
+                                } else {
+                                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                                    $target.focus(); // Set focus again
+                                };
+                            });
+                        }
+                    }
+                });
+        });
+    </script>
+
+
+</head>
+
+
+
+<body>
+
+
+<header></header>
+<nav>
+    <ul>
+        <li><a href="index.html">Kezdőlap</a> </li>
+        <li><a href="index.html#irodánk">Irodánk</a> </li>
+        <li><a href="elado.html">Eladó ingatlanok</a> </li>
+        <li><a href="kapcsolat.html">Kapcsolat</a> </li>
+
+
+    </ul>
+
+</nav>
+
+
+<main> <!-- container helyett most írhattam volna "tartalom"-at de ez így profibb -->
+    <div class="bemutatkozas_box">
+        <p>Rólunk</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor aliquet cursus. Ut a arcu quis mi pulvinar suscipit. In pretium fermentum lectus et vestibulum. Fusce vel ultricies eros. Maecenas in arcu quis est laoreet molestie. Fusce maximus justo ut ipsum sagittis, sed vestibulum turpis tincidunt. Cras ut congue mi, nec hendrerit ante. Morbi nec tellus rutrum, efficitur sapien vel, vehicula felis.
+            <br><br>
+            Donec non auctor sapien. Sed purus nisi, venenatis at ultricies et, vulputate quis dolor. Nunc sollicitudin volutpat libero pharetra varius. Fusce commodo massa eget imperdiet rhoncus. Sed lobortis tellus lectus, sed fermentum neque iaculis sed. Phasellus cursus nulla eu mauris tincidunt, sed hendrerit orci rhoncus. Sed maximus magna sed libero facilisis bibendum. Curabitur suscipit dignissim velit at ultricies. Aliquam erat volutpat. Etiam lorem mi, euismod eu feugiat et, porttitor id enim.
+            <br><br>
+            Duis eu odio vulputate, cursus risus a, hendrerit diam. Nullam hendrerit ut nisi nec sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis mi nunc, dictum non vulputate nec, semper non nisl. Pellentesque nec aliquam urna. Praesent a lorem sed lorem varius ultrices. Integer ut malesuada massa, in lacinia augue. Quisque tincidunt erat at tellus dictum commodo. Curabitur neque arcu, efficitur sed eleifend aliquam, eleifend non nisl. In eu posuere ex. Sed commodo libero felis, id rhoncus ante auctor et.</p>
+
+    </div>
+
+    <section class="jobboldal">
+        <h2>Kiemelt ingatlanjaink</h2>
+        <div class="kiemelt_box">
+            <a href="kepek/haz1.jpeg" data-lightbox="kiemelt" data-title="Irányár: 25.000.000 Ft"><img src="kepek/haz1.jpeg" width="200"></a>
+            <p>Irányár: 25.000.000 Ft</p>
+        </div>
+        <div class="kiemelt_box">
+            <a href="kepek/haz2.jpg" data-lightbox="kiemelt" data-title="Irányár: 33.000.000 Ft"><img src="kepek/haz2.jpg" width="200"></a>
+            <p>Irányár: 33.000.000 Ft</p>
+        </div>
+    </section>
+
+    <div class="float_vege"></div>  <!-- float megszüntetése, hogy ne egymás mellé pakolja a dolgokat -->
+
+    <div class="terkep">
+        <a name="irodánk"></a> <!-- Könyvjelző! Az "a" paranccsal hivatkozást és könyvjelzőt is létre lehet hozni. Ez a könyvjelző kompozerben a horgony volt. -->
+        <p class="cím1">Irodánk elérhetősége</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1374.6446242016334!2d19.11233820303031!3d47.97462670658001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1shu!2shu!4v1622828413636!5m2!1shu!2shu" width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+
+</main>
+
+<footer></footer>
+
+
+
+
+
+</body>
+</html>
