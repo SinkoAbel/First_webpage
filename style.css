@@ -44,40 +44,15 @@ nav a:hover {
     background-color: darkslategray;
 }
 
+main {
+    width: 1000px;
+    margin: auto;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.bemutatkozas_box {
+    background-color: white;
+    width: 600px;
+}
 
 
 
